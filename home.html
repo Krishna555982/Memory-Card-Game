@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Memory Game</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="btn" onclick="shuffleGame()">Shuffle Game</div>
+        <div class="btn" onclick="setLevel('easy')">Easy</div>
+        <div class="btn" onclick="setLevel('medium')">Medium</div>
+        <div class="btn" onclick="setLevel('hard')">Hard</div>
+    </div>
+
+    <div class="game-container" id="game-container"></div>
+
+    <div class="timer" id="timer">Time: 0 seconds</div>
+    <div class="moves-counter" id="moves-counter">Moves: 0</div>
+
+    <div class="congrats-message" id="congrats-message">
+        🎉 Congratulations!<br>
+        ⏰ Time Taken: <span id="final-time"></span><br>
+        🔄 Moves: <span id="final-moves"></span><br>
+        🏆 Score: <span id="final-score"></span><br>
+        <button class="btn" onclick="shuffleGame()">New Game</button>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
